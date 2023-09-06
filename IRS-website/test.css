@@ -1,0 +1,8 @@
+/* CSS */
+#sat-rs-content.hidden {
+  display: none;
+}
+
+#fsfw-content.visible {
+  display: block;
+}
