@@ -87,16 +87,11 @@ body {
 }
 
 
-
-
-
-
-
 .fsfw-desc {
-  margin-top: 40px;
+  margin-top: 60px;
 }
 
-#fsfw-content {
+#fsfw-content, #sat-rs-content {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -106,19 +101,21 @@ body {
   transform: translateY(90px);
 }
 
-#fsfw-links {
+#fsfw-links, #sat-rs-links {
   display: flex;
   align-items: center;
 }
 
 .develop a,
-.master a {
+.master a,
+.links a {
   text-decoration: none;
   color: #000;
 }
 
 .develop li,
-.master li {
+.master li,
+.links li {
   list-style: none;
   border: 2px solid #000;
   margin: 20px;
@@ -150,4 +147,20 @@ body {
   padding-right: 170px;
   padding-left: 170px;
   transform: translateY(90px);
+}
+
+
+#sat-rs-content.hidden {
+  display: none;
+}
+#sat-rs-content.visible {
+  display: none;
+}
+#fsfw-content.visable {
+  display:flex;
+}
+
+#fsfw-content.hidden {
+  display:none 
+ 
 }

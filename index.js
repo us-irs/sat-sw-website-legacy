@@ -4,12 +4,11 @@ const sat_content = document.getElementById("sat-rs-content");
 const fsfw_content = document.getElementById("fsfw-content");
 
 fsfw_click.addEventListener("click", () => {
-  fsfw_content.style.display = "block"; // Show the fsfw content
-  sat_content.style.display = "none"; // Hide the sat content
+  fsfw_content.style.display = "flex";
+  sat_content.style.display = "none";
 });
 
 sat_click.addEventListener("click", () => {
-  fsfw_content.style.display = "none"; // Hide the fsfw content
-  sat_content.style.display = "block"; // Show the sat content
-
+  fsfw_content.style.display = "none";
+  sat_content.style.display = "flex";
 });
