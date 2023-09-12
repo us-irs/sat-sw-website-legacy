@@ -1,10 +1,15 @@
 pipeline {
-    agent { dockerfile true }
-    stages {
-        stage('Deployment') {
-            steps {
-                sh 'rsync -h'
-            }
-        }
+  agent {
+    dockerfile {
+      dir 'automation'
+      reuseNode true
     }
+  }
+  stages {
+    stage('Deployment') {
+      steps {
+          sh 'rsync -h'
+      }
+    }
+  }
 }
