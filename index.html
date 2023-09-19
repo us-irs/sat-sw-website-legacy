@@ -1,164 +1,78 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>IRS Software Projects</title>
-    <link rel="stylesheet" href="index.css" />
-    <script src="index.js" defer></script>
-  </head>
-  <body>
-    <nav class="top-nav">
-      <div class="navbar">
-        <img src="images/IRS_Uni_invers.jpg" clas="navbar-logo" />
 
-        <p>IRS Satellite Software Projects</p>
-        <a href="#" class="contact">Contact</a>
+<head>
+  <title>IRS Software Projects</title>
+  <link rel="stylesheet" href="index.css" />
+  <script src="index.js" defer></script>
+</head>
+
+<body>
+  <nav class="top-nav">
+    <div class="navbar">
+      <img src="images/unilogo_schriftzug_white.png" clas="navbar-logo" />
+
+      <p>IRS Satellite Software Projects</p>
+      <a href="#" class="contact">Contact</a>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="side-bar-container">
+      <ul class="side-bar">
+        <li id="fsfw-click"><a href="index.html">FSFW</a></li>
+        <li id="sat-click"><a href="sat-rs.html">sat-rs</a></li>
+      </ul>
+    </div>
+    <div class="content">
+      <div id="sat-rs-content">
+      <div class="img-container">
+      <img class="logo" src="images/FSFW_Logo_V3_bw.png" />
+    </div>
+      <p class="fsfw-desc">
+        The Flight Software Framework is a C++ Object Oriented Framework for unmanned, automated systems like
+        Satellites.<br>
+
+        The initial version of the Flight Software Framework was developed during the Flying Laptop Project by the
+        University of Stuttgart in cooperation with Airbus Defence and Space GmbH.
+      </p>
+      <h1>Documentation and Coverage</h1>
+      <div id="fsfw-links">
+        </h1>
+        <div class="develop">
+
+          <ul>
+            <li><a href="https://documentation.irs.uni-stuttgart.de/fsfw/development/" target="_blank">DEVELOPE</a></li>
+            <li><a href="https://documentation.irs.uni-stuttgart.de/fsfw/coverage/development/" target="_blank">&#8594;
+                COVERAGE</a></li>
+          </ul>
+        </div>
+        <div class="master">
+          <ul>
+            <li><a href="https://documentation.irs.uni-stuttgart.de/fsfw/master/" target="_blank">MASTER</a></li>
+            <li><a href="https://documentation.irs.uni-stuttgart.de/fsfw/" target="_blank">&#8594; COVERAGE</a></li>
+          </ul>
+
+        </div>
+
       </div>
-    </nav>
-    <div class="container">
-      <div class="side-bar-container">
-        <ul class="side-bar">
-          <li id="fsfw-click">FSFW</li>
-          <li id="sat-click">sat-rs</li>
-        </ul>
-      </div>
-      <div class="content">
-        <div id="homepage" class="hidden">
-          <p></p>
-        </div>
-        <div id="fsfw-content" class="visible">
-          <img src="images/FSFW_Logo_V3_bw.png" />
-          <p class="fsfw-desc">
-            The Flight Software Framework is a C++ Object Oriented Framework for
-            unmanned, automated systems like Satellites.<br />
-
-            The initial version of the Flight Software Framework was developed
-            during the Flying Laptop Project by the University of Stuttgart in
-            cooperation with Airbus Defence and Space GmbH.
-          </p>
-          <h1>Documentation and Coverage</h1>
-          <div id="fsfw-links">
-            <div class="develop">
-              <ul>
-                <li>
-                  <a
-                    href="https://documentation.irs.uni-stuttgart.de/fsfw/development/"
-                    target="_blank"
-                    >develop</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://documentation.irs.uni-stuttgart.de/fsfw/coverage/development/"
-                    target="_blank"
-                    >&#8594; coverage</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="master">
-              <ul>
-                <li>
-                  <a
-                    href="https://documentation.irs.uni-stuttgart.de/fsfw/master/"
-                    target="_blank"
-                    >master</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://documentation.irs.uni-stuttgart.de/fsfw/"
-                    target="_blank"
-                    >&#8594; coverage</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-          <h1>Repository</h1>
-          <div class="repo-container">
-            <a
-              href="https://egit.irs.uni-stuttgart.de/fsfw/fsfw"
-              target="_blank"
-              class="repo"
-              >Repository</a
-            >
-          </div>
-        </div>
-
-        <div id="sat-rs-content" class="hidden">
-          <img src="images/sat-rs_logo.png" />
-          <p class="sat-rs-desc">
-            sat-rs is a framework with the primary goal to provide re-usable
-            components to write on-board software for remote systems like rovers
-            or satellites. It is specifically written for the special
-            requirements for these systems. A lot of the architecture and
-            general design considerations are based on the
-            <a href="index.html">FSFW</a>
-            C++ framework which has flight heritage through the 2 missions
-            <a
-              href="https://www.irs.uni-stuttgart.de/en/research/satellitetechnology-and-instruments/smallsatelliteprogram/flying-laptop/"
-              target="_blank"
-              >FLP</a
-            >
-            and
-            <a
-              href="https://www.irs.uni-stuttgart.de/en/research/satellitetechnology-and-instruments/smallsatelliteprogram/EIVE/"
-              target="_blank"
-              >EIVE</a
-            >.
-          </p>
-          <div id="sat-rs-links">
-            <div class="links">
-              <h1>Documentation</h1>
-              <div class="repo-container">
-                <a href="/projects/sat-rs" target="_blank" class="repo">book</a>
-              </div>
-              <div class="repo-container">
-                <a
-                  href="https://docs.rs/satrs-core"
-                  target="_blank"
-                  class="repo"
-                  >core API</a
-                >
-              </div>
-              <h1>Repository</h1>
-              <div class="repo-container">
-                <a
-                  href="https://egit.irs.uni-stuttgart.de/rust/sat-rs"
-                  target="_blank"
-                  class="repo"
-                  >Gitea</a
-                >
-              </div>
-              <div class="repo-container">
-                <a
-                  href="https://github.com/us-irs/sat-rs"
-                  target="_blank"
-                  class="repo2"
-                  >GitHub (Mirror)</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
+      <h1>Repository</h1>
+      <div class="repo-container">
+        <p><a href="https://egit.irs.uni-stuttgart.de/fsfw/fsfw" target="_blank" class="repo">REPOSITORY</a></p>
       </div>
     </div>
-    <footer class="footer">
-      <ul>
-        <li>
-          <a href="https://www.uni-stuttgart.de/impressum" target="_blank"
-            >imprint</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://info.irs.uni-stuttgart.de/datenschutz/datenschutzWebmit.html"
-            target="_blank"
-            >protection of privacy</a
-          >
-        </li>
-        <li>&copy; 2023 Website by Nadine Eunous</li>
-      </ul>
-    </footer>
-  </body>
+  </div>
+  </div>
+</div>
+  <footer class="footer">
+
+    <ul>
+      <li><a href="https://www.uni-stuttgart.de/impressum" target="_blank">imprint</a></li>
+      <li><a href="https://info.irs.uni-stuttgart.de/datenschutz/datenschutzWebmit.html" target="_blank">protection of
+          privacy</a></li>
+      <li>&copy; 2023 Website by Nadine Eunous</li>
+    </ul>
+
+  </footer>
+</body>
+
 </html>
