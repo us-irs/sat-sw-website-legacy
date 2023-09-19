@@ -1,6 +1,7 @@
 @font-face {
-font-family: 'univers';
-src: url('static/font-univers/UniversforUniS55Rm-Regular.ttf')  format('truetype');
+  font-family: "univers";
+  src: url("static/font-univers/UniversforUniS55Rm-Regular.ttf")
+    format("truetype");
 }
 
 /* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Rubik:wght@300&display=swap"); */
@@ -9,14 +10,14 @@ body {
   margin: 0;
   padding: 0;
   font-family: "univers";
-  color:#323232;
+  color: #323232;
   font-size: 24px;
 }
 
 .top-nav {
   padding: 15px 20px;
   background-color: #323232;
-  color: white;  
+  color: white;
 }
 
 .navbar {
@@ -64,16 +65,12 @@ body {
   height: 100%;
   width: 100%;
   box-sizing: border-box;
-  padding:17px 30px;
+  padding: 17px 30px;
   text-decoration: none;
-  color: black
-  
+  color: black;
 }
 
-
-
-#fsfw-click
-#sat-click {
+#fsfw-click #sat-click {
   background-color: #555;
   color: white;
 }
@@ -81,7 +78,6 @@ body {
 .side-bar li a:hover {
   background-color: #606060;
   color: white;
-
 }
 
 .side-bar-container {
@@ -93,17 +89,16 @@ body {
 .container {
   display: flex;
   flex-direction: row;
- 
 }
 
 .logo {
-  margin-top:60px;
+  margin-top: 60px;
   margin-bottom: 60px;
-  width : auto
+  width: auto;
 }
 
 .fsfw-desc {
-  margin-top:60px;
+  margin-top: 60px;
   text-align: justify;
 }
 
@@ -119,7 +114,7 @@ body {
   align-items: center;
   padding-right: 170px;
   padding-left: 170px;
-    //transform: translateY(50px);
+  //transform: translateY(50px);
 }
 
 #fsfw-content img {
@@ -156,11 +151,10 @@ body {
 }
 
 .img-container {
-
-  width: 100%; 
-  display: flex; 
+  width: 100%;
+  display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
 }
 
 .develop li,
@@ -238,7 +232,6 @@ body {
   bottom: 0;
   display: flex;
   justify-content: center;
-  
 }
 
 .footer li {
