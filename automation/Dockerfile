@@ -4,7 +4,7 @@ RUN apt-get update
 RUN apt-get --yes upgrade
 # Required in case tzdata is a installed, won't install otherwise
 ARG DEBIAN_FRONTEND=noninteractive
-RUN apt-get --yes install rsync
+RUN apt-get --yes install rsync openssh-client
 
 #ssh needs a valid user to work
 RUN adduser --uid 114 jenkins
