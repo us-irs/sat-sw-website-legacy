@@ -7,6 +7,9 @@ pipeline {
   }
   stages {
     stage('Deployment') {
+      when {
+        branch 'main'
+      }
       steps {
         sshagent(credentials: ['documentation-buildfix']) {
           // Deploy to Apache webserver
