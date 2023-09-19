@@ -1,6 +1,6 @@
 @font-face {
 font-family: 'univers';
-src: url('/static/font-univers/UniversforUniS55Rm-Regular.ttf')  format('truetype');
+src: url('static/font-univers/UniversforUniS55Rm-Regular.ttf')  format('truetype');
 
 }
 body {
