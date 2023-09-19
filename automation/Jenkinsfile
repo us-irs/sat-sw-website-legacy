@@ -16,7 +16,7 @@ pipeline {
           // Deploy to Apache webserver
           // sh 'rsync -r --delete --exclude projects/* --exclude static/font-univers . buildfix@documentation.irs.uni-stuttgart.de:/'
         // }
-      //}
+      }
     }
   }
 }
