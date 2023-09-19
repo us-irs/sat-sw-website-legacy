@@ -1,11 +1,11 @@
 pipeline {
-  //agent {
-    //dockerfile {
-      //dir 'automation'
-      //reuseNode true
-    //}
-  //}
-  agent any
+  agent {
+    dockerfile {
+      dir 'automation'
+      reuseNode true
+    }
+  }
+  // agent any
   stages {
     stage('Deployment') {
       when {
