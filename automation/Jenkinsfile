@@ -11,11 +11,12 @@ pipeline {
         branch 'main'
       }
       steps {
-        sshagent(credentials: ['documentation-buildfix']) {
+        sh 'echo Hello World'
+        // sshagent(credentials: ['documentation-buildfix']) {
           // Deploy to Apache webserver
-          sh 'rsync -r --delete --exclude projects/* --exclude static/font-univers . buildfix@documentation.irs.uni-stuttgart.de:/'
-        }
-      }
+          // sh 'rsync -r --delete --exclude projects/* --exclude static/font-univers . buildfix@documentation.irs.uni-stuttgart.de:/'
+        // }
+      //}
     }
   }
 }
