@@ -1,91 +1,103 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
+  <head>
+    <title>IRS Software Projects</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
 
-<head>
-  <title>IRS Software Projects</title>
-  <link rel="stylesheet" href="index.css"/>
-</head>
+  <body>
+    <nav class="top-nav">
+      <div class="navbar">
+        <img src="images/unilogo_schriftzug_white.png" clas="navbar-logo" />
 
-<body>
-  <nav class="top-nav">
-    <div class="navbar">
-      <img src="images/unilogo_schriftzug_white.png" clas="navbar-logo" />
+        <p>Software Projects</p>
+        <a href="#" class="contact">Contact</a>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="side-bar-container">
+        <ul class="side-bar">
+          <li id="fsfw-click"><a href="index.html">FSFW</a></li>
+          <li id="sat-click"><a href="sat-rs.html">sat-rs</a></li>
+        </ul>
+      </div>
 
-      <p>Software Projects</p>
-      <a href="#" class="contact">Contact</a>
-    </div>
-  </nav>
-  <div class="container">
-    <div class="side-bar-container">
-      <ul class="side-bar">
-        <li id="fsfw-click"><a href="index.html">FSFW</a></li>
-        <li id="sat-click"><a href="sat-rs.html">sat-rs</a></li>
-      </ul>
-    </div>
-
-    <div class="content">
-      <div id="sat-rs-content">
-
-        <img class="logo" src="images/sat-rs_logo.png" />
-        <p class="sat-rs-desc">sat-rs is a framework with the primary goal to provide re-usable components
-          to write on-board software for remote systems like rovers or satellites. It is specifically written for the
-          special requirements for these systems.
-          A lot of the architecture and general design considerations are based on the
-          <a href="index.html">FSFW</a>
-          C++ framework which has flight heritage through the 2 missions <a
-            href="https://www.irs.uni-stuttgart.de/en/research/satellitetechnology-and-instruments/smallsatelliteprogram/flying-laptop/"
-            target="_blank">FLP</a>
-          and <a
-            href="https://www.irs.uni-stuttgart.de/en/research/satellitetechnology-and-instruments/smallsatelliteprogram/EIVE/"
-            target="_blank">EIVE</a>.
-        </p>
-        <h1>Documentation </h1>
-        <div id="fsfw-links">
-          </h1>
-          <div class="develop">
-
-            <ul>
-              <li><a href="/projects/sat-rs" target="_blank">BOOK</a></li>
-            </ul>
+      <div class="content">
+        <div id="sat-rs-content">
+          <img class="logo" src="images/sat-rs_logo.png" />
+          <p class="sat-rs-desc">
+            sat-rs is a framework with the primary goal to provide re-usable
+            components to write on-board software for remote systems like rovers
+            or satellites. It is specifically written for the special
+            requirements for these systems. A lot of the architecture and
+            general design considerations are based on the
+            <a href="index.html">FSFW</a>
+            C++ framework which has flight heritage through the 2 missions
+            <a
+              href="https://www.irs.uni-stuttgart.de/en/research/satellitetechnology-and-instruments/smallsatelliteprogram/flying-laptop/"
+              target="_blank"
+              >FLP</a
+            >
+            and
+            <a
+              href="https://www.irs.uni-stuttgart.de/en/research/satellitetechnology-and-instruments/smallsatelliteprogram/EIVE/"
+              target="_blank"
+              >EIVE</a
+            >.
+          </p>
+          <h1>Documentation</h1>
+          <div id="fsfw-links">
+            <div class="develop">
+              <ul>
+                <li><a href="/projects/sat-rs" target="_blank">BOOK</a></li>
+              </ul>
+            </div>
+            <div class="master">
+              <ul>
+                <li><a href="https://docs.rs/satrs-core">CORE API</a></li>
+              </ul>
+            </div>
           </div>
-          <div class="master">
-            <ul>
-              <li><a href="https://docs.rs/satrs-core">CORE API</a></li>
-            </ul>
-
+          <h1>Repository</h1>
+          <div id="fsfw-links">
+            <div class="develop">
+              <ul>
+                <li>
+                  <a
+                    href="https://egit.irs.uni-stuttgart.de/rust/sat-rs"
+                    target="_blank"
+                    >GITEA</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="master">
+              <ul>
+                <li>
+                  <a href="https://github.com/us-irs/sat-rs">GITHUB (MIRROR)</a>
+                </li>
+              </ul>
+            </div>
           </div>
-
-        </div>
-        <h1>Repository</h1>
-        <div id="fsfw-links">
-          </h1>
-          <div class="develop">
-
-            <ul>
-              <li><a href="https://egit.irs.uni-stuttgart.de/rust/sat-rs" target="_blank">GITEA</a></li>
-            </ul>
-          </div>
-          <div class="master">
-            <ul>
-              <li><a href="https://github.com/us-irs/sat-rs">GITHUB (MIRROR)</a></li>
-            </ul>
-
-          </div>
-
         </div>
       </div>
     </div>
-  </div>
-  <footer class="footer">
-
-    <ul>
-      <li><a href="https://www.uni-stuttgart.de/impressum" target="_blank">imprint</a></li>
-      <li><a href="https://info.irs.uni-stuttgart.de/datenschutz/datenschutzWebmit.html" target="_blank">protection of
-          privacy</a></li>
-      <li>&copy; 2023 Website by Nadine Eunous</li>
-    </ul>
-
-  </footer>
-</body>
-
+    <footer class="footer">
+      <ul>
+        <li>
+          <a href="https://www.uni-stuttgart.de/impressum" target="_blank"
+            >imprint</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://info.irs.uni-stuttgart.de/datenschutz/datenschutzWebmit.html"
+            target="_blank"
+            >protection of privacy</a
+          >
+        </li>
+        <li>&copy; 2023 Website by Nadine Eunous</li>
+      </ul>
+    </footer>
+  </body>
 </html>
