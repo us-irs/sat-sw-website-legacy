@@ -3,6 +3,7 @@ pipeline {
     dockerfile {
       dir 'automation'
       reuseNode true
+      args '--network host'
     }
   }
   // agent any
@@ -14,7 +15,7 @@ pipeline {
       steps {
         sshagent(credentials: ['documentation-buildfix']) {
           // Deploy to Apache webserver
-          sh 'rsync -r --delete --exclude projects/ --exclude static/font-univers/ . buildfix@documentation.irs.uni-stuttgart.de:/'
+          sh "rsync -r --delete --exclude 'projects/' --exclude static/font-univers . buildfix@documentation.irs.uni-stuttgart.de:/"
         }
       }
     }
