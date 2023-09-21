@@ -90,12 +90,17 @@ body {
   flex-direction: row;
 }
 
-.logo {
-  margin-top: 60px;
-  margin-bottom: 60px;
-  width: auto;
+.logo-fsfw {
+  width: 60%;
+  object-fit: contain;
+  height: auto;
 }
 
+.logo-sat-rs {
+  width: 40%;
+  object-fit: contain;
+  height: auto;
+}
 .fsfw-desc {
   margin-top: 60px;
   text-align: justify;
@@ -113,20 +118,8 @@ body {
   align-items: center;
   padding-right: 170px;
   padding-left: 170px;
+  padding-top: 20px;
   //transform: translateY(50px);
-}
-
-#fsfw-content img {
-  width: 50%;
-  object-fit: contain;
-
-  height: auto;
-}
-
-.content img {
-  width: 40%;
-  object-fit: contain;
-  height: auto;
 }
 
 #fsfw-links,
@@ -147,7 +140,6 @@ body {
   color: white;
   background-color: #004191;
   font-size: 18px;
-
 }
 
 .img-container {
@@ -162,13 +154,13 @@ body {
 .sat-doc li {
   list-style: none;
   margin: 20px;
-  padding:0;
-  width: 160px;
-  height: 60px;
+  padding: 0;
+  width: 200px;
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
-  line-height: 60px;
+  line-height: 70px;
   transition: color 0.3s;
 }
 
@@ -184,12 +176,12 @@ body {
   margin: 20px;
   padding-left: 0;
   padding-right: 0;
-  width: 160px;
-  height: 60px;
+  width: 200px;
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
-  line-height: 60px;
+  line-height: 70px;
   transition: color 0.3s;
 }
 
@@ -219,7 +211,8 @@ body {
   align-items: center;
   padding-right: 170px;
   padding-left: 170px;
-  padding-bottom: 120px
+  padding-bottom: 120px;
+  padding-top: 40px;
 }
 
 .footer {
