@@ -128,8 +128,8 @@ body {
   align-items: center;
 }
 
-.develop a,
-.master a,
+.left-box a,
+.right-box a,
 .sat-doc a,
 .single-box a {
   display: block;
@@ -149,8 +149,8 @@ body {
   align-items: center;
 }
 
-.develop li,
-.master li,
+.left-box li,
+.right-box li,
 .sat-doc li {
   list-style: none;
   margin: 20px;
@@ -185,22 +185,22 @@ body {
   transition: color 0.3s;
 }
 
-.develop ul,
+.left-box ul,
 .links ul,
 .sat-doc ul,
 .single-box p {
   padding-left: 0;
 }
 
-.develop li a:hover,
-.master li a:hover,
+.left-box li a:hover,
+.right-box li a:hover,
 .links li a:hover,
 .single-box p a:hover {
   background-color: #323232;
   color: white;
 }
 
-.develop li {
+.left-box li {
   margin-right: 60px;
 }
 
