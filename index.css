@@ -131,7 +131,7 @@ body {
 .develop a,
 .master a,
 .sat-doc a,
-.repo-container a {
+.single-box a {
   display: block;
   text-align: center;
   width: 100%;
@@ -171,7 +171,7 @@ body {
   justify-content: center;
 }
 
-.repo-container p {
+.single-box p {
   //border: 2px solid #000;
   margin: 20px;
   padding-left: 0;
@@ -188,14 +188,14 @@ body {
 .develop ul,
 .links ul,
 .sat-doc ul,
-.repo-container p {
+.single-box p {
   padding-left: 0;
 }
 
 .develop li a:hover,
 .master li a:hover,
 .links li a:hover,
-.repo-container p a:hover {
+.single-box p a:hover {
   background-color: #323232;
   color: white;
 }
