@@ -2,14 +2,17 @@
 <html>
   <head>
     <title>IRS Software Projects</title>
-    <link rel="stylesheet" media="screen and (max-width: 699px)" href="phone.css"/>
-    <link rel="stylesheet" media="screen and (min-width: 700px)" href="index.css"/>
+    <link rel="stylesheet" href="index.css"/>
+
+
   </head>
 
   <body>
     <nav class="top-nav">
       <div class="navbar">
-        <img src="images/unilogo_schriftzug_white.png" class="navbar-logo" />
+        <a href="https://www.irs.uni-stuttgart.de/" target="_blank"
+          ><img src="images/unilogo_schriftzug_white.png" clas="navbar-logo"
+        /></a>
 
         <p>Software Projects</p>
         <a href="#" class="contact">Contact</a>
@@ -24,18 +27,15 @@
           <li id="sp-click"><a href="spacepackets.html">spacepackets</a></li>
         </ul>
       </div>
-
       <div class="content">
         <div id="sat-rs-content">
-          <img class="logo-sat-rs" src="images/sat-rs_logo.png" />
-          <p class="sat-rs-desc">
-            sat-rs is a framework with the primary goal to provide re-usable
-            components to write on-board software for remote systems like rovers
-            or satelites. It is specifically written for the special
-            requirements for these systems. A lot of the architecture and
-            general design considerations are based on the
-            <a href="index.html">FSFW</a>
-            C++ framework which has flight heritage through the 2 missions
+          <div class="img-container">
+            <img class="logo-fsfw" src="images/FSFW_Logo_V3_bw.png" />
+          </div>
+          <p class="fsfw-desc">
+            The Flight Software Framework is a C++ Object Oriented Framework for
+            unmanned, automated systems like Satellites. It has flight heritage
+            through the 2 missions
             <a
               href="https://www.irs.uni-stuttgart.de/en/research/satellitetechnology-and-instruments/smallsatelliteprogram/flying-laptop/"
               target="_blank"
@@ -48,28 +48,23 @@
               >EIVE</a
             >.
           </p>
-          <h1>Documentation</h1>
-          <div id="sat-rs-links">
-            <div class="left-box">
-              <ul>
-                <li><a href="/projects/sat-rs" target="_blank">BOOK</a></li>
-              </ul>
-            </div>
-            <div class="right-box">
-              <ul>
-                <li><a href="https://docs.rs/satrs-core">CORE API</a></li>
-              </ul>
-            </div>
-          </div>
-          <h1>Repository</h1>
-          <div id="sat-rs-links">
+
+          <h1>Documentation and Coverage</h1>
+          <div id="fsfw-links">
             <div class="left-box">
               <ul>
                 <li>
                   <a
-                    href="https://egit.irs.uni-stuttgart.de/rust/sat-rs"
+                    href="https://documentation.irs.uni-stuttgart.de/projects/fsfw/development/"
                     target="_blank"
-                    >GITEA</a
+                    >DEVELOP</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://documentation.irs.uni-stuttgart.de/projects/fsfw/coverage/development/"
+                    target="_blank"
+                    >&#8594; COVERAGE</a
                   >
                 </li>
               </ul>
@@ -77,28 +72,43 @@
             <div class="right-box">
               <ul>
                 <li>
-                  <a href="https://github.com/us-irs/sat-rs">GITHUB (MIRROR)</a>
+                  <a
+                    href="https://documentation.irs.uni-stuttgart.de/projects/fsfw/master/"
+                    target="_blank"
+                    >MASTER</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://documentation.irs.uni-stuttgart.de/projects/fsfw/coverage/master/"
+                    target="_blank"
+                    >&#8594; COVERAGE</a
+                  >
                 </li>
               </ul>
             </div>
           </div>
-          <h1>Examples</h1>
-          <div id="sat-rs-links">
-            <div class="single-box">
-              <p>
-                <a
-                  href="https://egit.irs.uni-stuttgart.de/rust/sat-rs/src/branch/main/satrs-example"
-                  target="_blank"
-                  >EXAMPLE APP</a
-                >
-              </p>
-            </div>
+          <h1>Repository</h1>
+          <div class="single-box">
+            <p>
+              <a
+                href="https://egit.irs.uni-stuttgart.de/fsfw/fsfw"
+                target="_blank"
+                class="repo"
+                >REPOSITORY</a
+              >
+            </p>
           </div>
         </div>
       </div>
     </div>
     <footer class="footer">
       <ul>
+        <li>
+          <a href="https://www.irs.uni-stuttgart.de/" target="_blank"
+            >IRS University of Stuttgart</a
+          >
+        </li>
         <li>
           <a href="https://www.uni-stuttgart.de/impressum" target="_blank"
             >imprint</a
